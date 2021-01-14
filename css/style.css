@@ -1,0 +1,328 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+::selection, ::-moz-selection {
+	background-color: rgba(153, 0, 0, 0.8);
+	color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, li {
+	list-style: none;
+}
+
+p, h1, h2, h3, h4, h5,
+a, li, button {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+footer .fa, footer .fas {
+	margin-right: 7px;
+	position: relative;
+	top: 1px;
+	color: #969696;
+}
+
+.fa-laptop:hover, .fa-check:hover, .fa-medkit:hover {
+	color: rgba(153, 0, 0, 0.8);
+}
+
+.fa-phone-square {
+	font-size: 1rem;
+}
+
+.fa-envelope {
+	font-size: 0.9rem;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	padding: 20px;
+	height: 60px;
+	width: 100%;
+	display: inline-block;
+	background-color: rgba(153, 0, 0, 0.8);
+	color: rgb(255, 255, 255);
+	z-index: 3;
+}
+
+#logo {
+	position: relative;
+	bottom: 17px;
+	left: 25px;
+	width: 151px;
+}
+
+#meniikona {
+	width: 40px;
+	height: 40px;
+	display: none;
+	position: absolute;
+	right: 20px;
+	top: 10px;
+}
+
+header:hover {
+  background-color: rgba(153, 0, 0, 1);
+}
+
+header h1 {
+	position: relative;
+	bottom: 13px;
+	font-size: 2em;
+}
+
+header nav ul {
+   position: absolute;
+   top: 18px;
+   right: 20px;
+}
+
+header nav ul li {
+	display: inline-block;
+	list-style: none;
+}
+
+header nav ul li a {
+	padding: 20px 10px;
+	position: relative;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+}
+
+header nav ul li a:hover {
+	background-color: white;
+	color: black;
+	margin-bottom: 2px;
+}
+
+
+button {
+	padding: 10px 20px;
+	border: none;
+	color: white;
+	background-color: rgba(153,0,0,0.8);
+	border-radius: 5px;
+}
+
+button:hover {
+	padding: 8px 18px;
+	background-color: rgba(153,0,0,0);
+	border: 2px solid rgba(153,0,0,8);
+	color: rgba(153,0,0,8);
+	cursor: pointer;
+}
+
+main {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    margin: auto;
+}
+
+#hero {
+	display: flex;
+	justify-content: center;
+	align-content: flex-end;
+	text-align: center;
+	width: 100%;
+	height: 708px;
+	background-image: url('../images/hero-background.jpg');
+	background-position: bottom;
+	background-size: cover;
+}
+
+#hero section {
+	padding: 150px 0 0 0;
+}
+
+#hero section button {
+	margin-top: 15px;
+}
+
+#glavno {
+	width: 100%;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.ploce {
+	max-width: 400px;
+	width: 400px;
+	justify-content: center;
+	align-items: center;
+	background-color: #ececec;
+	margin: 5px;
+	padding: 10px;
+	transition: all 0.2s ease-out;
+}
+
+.ploce ul li, #ponuda h3 {
+	text-align: center;
+}
+
+.ploce:hover * {
+	color: rgba(153,0,0,0.8);
+}
+
+.ploce:hover {
+	transform: scale(1.1);
+	transition: all 0.2s ease-in;
+}
+
+.ploce:hover h3, .ploce:hover li {
+	color: black;
+}
+
+#ponuda p {
+	text-align: center;
+	font-size: 2em;
+	color: #333333;
+	margin: 10px 0;
+}
+
+#ponuda h3 {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#ponuda {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+#glavno h2 {
+	text-align: center;
+	font-weight: 700;
+	display: block;
+	margin: 20px auto;
+	text-transform: uppercase;
+	font-size: 3em;
+ }
+
+ #partneri {
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 2px;
+	background-color: #ececec;
+ }
+
+#partneri ul {
+	clear: both;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#partneri h3 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.3em;
+	text-transform: uppercase;
+}
+
+#partneri ul li {
+	justify-content: space-around;
+	list-style: none;
+	height: auto;
+}
+
+footer {
+	position: relative;
+	width: 100%;
+	padding: 60px 0;
+	color: white;
+	background-color: #222;
+	font-weight: 400;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.footersadrzaj a  {
+	font-family: 'Titillium Web', sans-serif;
+	color: #969696;
+	font-size: 0.9em;
+	text-decoration: none;
+}
+
+.footersadrzaj a:hover {
+	color: white;
+}
+
+.footersadrzaj h4 {
+	text-transform: uppercase;
+	opacity: 0.5;
+}
+
+#nazad {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	z-index: 4;
+	bottom: 20px;
+	right: 20px;
+	display: none;
+	cursor: pointer;
+}
+
+
+/*media query*/
+
+@media screen and (max-width: 800px) {
+	header nav {
+		display: none;
+	}
+
+	header nav ul {
+		width: 100%;
+		position: fixed;
+		top: 62px;
+		left: 0;
+		right: 0;
+	}
+
+	header ul, header li, header a, header ul:hover, header li:hover, header a:hover {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		text-align: center;
+	}
+
+	#navigacija ul, #navigacija li, h#navigacija  a {
+		background-color: rgba(153, 0, 0, 1);
+		color: white;
+	}
+
+	#navigacija  ul:hover, #navigacija  li:hover, #navigacija  a:hover {
+		background-color: rgba(153, 0, 0, 1);
+		color: white;
+	}
+
+	#meniikona {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 525px) {
+	footer {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.footersadrzaj {
+		padding: 20px 40px;
+	}
+}
